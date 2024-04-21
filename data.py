@@ -2,8 +2,9 @@ import csv
 import json
 import pandas as pd
 from sklearn.model_selection import train_test_split
-
+from preprocess import preprocess_data
 def create_dataset(json_file_path):
+    preprocess_data()
     with open(json_file_path, mode="r") as file:
         data = json.load(file)
         print(data)

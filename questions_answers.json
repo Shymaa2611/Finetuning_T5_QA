@@ -1,18 +1,17 @@
 [
-
     {
-    "question":"q1",
-    "answer":"an1",
-    "context":"con1"
+        "question": "q",
+        "answer": "",
+        "context": "con"
     },
     {
-    "question":"q2",
-    "answer":"an2",
-    "context":"con2"
+        "question": "q",
+        "answer": "",
+        "context": "con"
     },
     {
-    "question":"q3",
-    "answer":"an3",
-    "context":"con3"
+        "question": "q",
+        "answer": "",
+        "context": "con"
     }
-    ]
+]
