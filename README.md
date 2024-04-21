@@ -12,8 +12,7 @@
 
 
 ## FineTuning
- - we finetuning T5 for question answering task on new dataset , this dataset is collection of  books collected fro
-
+ 
 ## Technologies
 
  - python
