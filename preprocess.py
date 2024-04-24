@@ -9,11 +9,7 @@ import re
 nltk.download('punkt')
 nltk.download('stopwords')
 
-def preprocess_data():
-   with open('questions_answers.json', 'r') as f:
-     data = json.load(f)
-
-
+def preprocess_data(data):
      ps = PorterStemmer()
      stop_words = set(stopwords.words('english'))
 
@@ -54,7 +50,7 @@ def preprocess_data():
         'context': context_processed
     })
 
-   with open('questions_answers.json', 'w') as f:
+     with open('questions_answers.json', 'w') as f:
        json.dump(processed_data, f, indent=4)
 
-   print("Processed data saved to processed_data.json")
+     print("Processed data saved to processed_data.json")
