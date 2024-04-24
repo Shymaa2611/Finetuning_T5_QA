@@ -1,17 +1,21 @@
-[
-    {
-        "question": "q",
-        "answer": "",
-        "context": "con"
-    },
-    {
-        "question": "q",
-        "answer": "",
-        "context": "con"
-    },
-    {
-        "question": "q",
-        "answer": "",
-        "context": "con"
-    }
+[{
+    "context": "Devices \nPlasma Panel\nLCD\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRandom Scan Systems\nGraphics Software Package\n\u2022 Programming Environment\n\u2022 OpenGL\n\u2022 DirectX\n\u2022 Java Imaging APIs\n\u2022 Software Standards\n\u2022 GKS-Graphics Kernel System\n\u2022 PHIGS-Programmer\u2019s Hierarchical Interactive \nGraphics Interface and PHIGS+\n\u2022 CGI-Common Graphics Interface\n\u2022 CGM-Computer Graphics Metafile\nModel to Device Coordinate \nPipeline\n",
+    "question": "What does rss stand for?",
+    "answer": "raster scan systems"
+  },
+  {
+    "context": "Devices \nPlasma Panel\nLCD\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRandom Scan Systems\nGraphics Software Package\n\u2022 Programming Environment\n\u2022 OpenGL\n\u2022 DirectX\n\u2022 Java Imaging APIs\n\u2022 Software Standards\n\u2022 GKS-Graphics Kernel System\n\u2022 PHIGS-Programmer\u2019s Hierarchical Interactive \nGraphics Interface and PHIGS+\n\u2022 CGI-Common Graphics Interface\n\u2022 CGM-Computer Graphics Metafile\nModel to Device Coordinate \nPipeline\n",
+    "question": "What includes gks-graphics kernel system?",
+    "answer": "graphics software package"
+  },
+  {
+    "context": "Devices \nPlasma Panel\nLCD\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRandom Scan Systems\nGraphics Software Package\n\u2022 Programming Environment\n\u2022 OpenGL\n\u2022 DirectX\n\u2022 Java Imaging APIs\n\u2022 Software Standards\n\u2022 GKS-Graphics Kernel System\n\u2022 PHIGS-Programmer\u2019s Hierarchical Interactive \nGraphics Interface and PHIGS+\n\u2022 CGI-Common Graphics Interface\n\u2022 CGM-Computer Graphics Metafile\nModel to Device Coordinate \nPipeline\n",
+    "question": "Devices plasma panel what?",
+    "answer": "lcd"
+  },
+  {
+    "context": "Devices \nPlasma Panel\nLCD\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRaster Scan Systems\nRandom Scan Systems\nGraphics Software Package\n\u2022 Programming Environment\n\u2022 OpenGL\n\u2022 DirectX\n\u2022 Java Imaging APIs\n\u2022 Software Standards\n\u2022 GKS-Graphics Kernel System\n\u2022 PHIGS-Programmer\u2019s Hierarchical Interactive \nGraphics Interface and PHIGS+\n\u2022 CGI-Common Graphics Interface\n\u2022 CGM-Computer Graphics Metafile\nModel to Device Coordinate \nPipeline\n",
+    "question": "What type of lcd raster scan systems are used?",
+    "answer": "plasma panel"
+  }
 ]
