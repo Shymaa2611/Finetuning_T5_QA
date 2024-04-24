@@ -3,42 +3,24 @@ import json
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from preprocess import preprocess_data
-def load_json_line_by_line(json_file_path):
-    with open(json_file_path, mode="r") as file:
-        decoder = json.JSONDecoder()
-        buffer = ""
-        for line in file:
-            buffer += line.strip()
-            while buffer:
-                try:
-                    result, index = decoder.raw_decode(buffer)
-                    if isinstance(result, list):
-                        for item in result:
-                            yield item
-                    buffer = buffer[index:]
-                except json.JSONDecodeError:
-                    break
 
 def create_dataset(json_file_path):
-    preprocess_data()
-    data=[]
-    with open(json_file_path, mode="r") as file:
-        for json_obj in load_json_line_by_line(json_file_path):
-               data.append(json_obj)
-        csv_file_path = "data.csv"
-        field_names = ["question", "answer", "context"]
+    with open(json_file_path, 'r') as json_file:
+      data = json.load(json_file)
+      preprocess_data(data)
+      csv_file = 'data.csv'
+      fieldnames = data[0].keys()
+    with open(csv_file, mode='w', newline='') as file:
+       writer = csv.DictWriter(file, fieldnames=fieldnames)
+       writer.writeheader()
+       for row in data:
+         writer.writerow(row)
 
-        with open(csv_file_path, mode="w", newline="") as file:
-            writer = csv.DictWriter(file, fieldnames=field_names)
+    print("Data written to CSV file:", csv_file)
 
-            writer.writeheader()
-            for item in data:
-                writer.writerow(item)
-
-        print("CSV file created successfully.")
 
 def split_data():
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("data.csv", encoding="latin1")
     train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
     train_df.to_csv("train_data.csv", index=False)
     val_df.to_csv("val_data.csv", index=False)
