@@ -7,12 +7,13 @@ from preprocess import preprocess_data
 def create_dataset(json_file_path):
     with open(json_file_path, 'r') as json_file:
       data = json.load(json_file)
-      preprocess_data(data)
+      data=preprocess_data(data)
+      print("====================== data =========")
+      print(data)
       csv_file = 'data.csv'
       fieldnames = data[0].keys()
     with open(csv_file, mode='w', newline='') as file:
        writer = csv.DictWriter(file, fieldnames=fieldnames)
-       writer.writeheader()
        for row in data:
          writer.writerow(row)
 
