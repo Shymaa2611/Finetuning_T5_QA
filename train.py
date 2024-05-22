@@ -19,8 +19,8 @@ train_file_path = 'train_data.csv'
 validation_file_path = 'val_data.csv'
 save_model_path = 'model/'
 save_tokenizer_path = 'tokenizer/'
-pretrained_model = 't5-base'
-# pretrained_model = 't5-large'
+#pretrained_model = 't5-base'
+pretrained_model = 't5-large'
 # pretrained_model = 'google/t5-v1_1-large'
 
 args = argparse.Namespace()
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     print ('Initializing model...')
     model = T5FineTuner(model, tokenizer, args)
     trainer = pl.Trainer(
-        max_epochs=10,
+        max_epochs=100,
         #gpus=1,
         #progress_bar_refresh_rate=30,
         callbacks=[EarlyStopping(monitor="val_loss")]
