@@ -10,14 +10,13 @@
  - dataset is collection of books and slids that related with computer science and information 
    system fields . 
 
-
-## FineTuning
  
 ## Technologies
 
  - python
  - torch
  - pytorch_lighting
+ - T5 Large
  - transformers
  - scikit-learn
 
