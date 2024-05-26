@@ -19,8 +19,8 @@ train_file_path = 'train_data.csv'
 validation_file_path = 'val_data.csv'
 save_model_path = 'model/'
 save_tokenizer_path = 'tokenizer/'
-#pretrained_model = 't5-base'
-pretrained_model = 't5-large'
+pretrained_model = 't5-base'
+#pretrained_model = 't5-large'
 # pretrained_model = 'google/t5-v1_1-large'
 
 args = argparse.Namespace()
