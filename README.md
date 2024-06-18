@@ -24,6 +24,8 @@
 ## Create dataset 
  - run create_data.ipynb
 
+## Checkpoint
+
 ## Preprocessing
  - pip install data.py
 
