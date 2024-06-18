@@ -36,3 +36,4 @@
 
 
  ## Inference
+ - python inference.py
